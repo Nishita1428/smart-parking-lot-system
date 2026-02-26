@@ -15,6 +15,7 @@ $result = mysqli_query($conn, $query);
 <body>
     <?php include("includes/navbar.php"); ?>
 <div class="container">
+    <div class="card">
 <h2>All Parking Slots</h2>
 
 <table border="1" width="100%" cellpadding="8">
@@ -50,7 +51,7 @@ $result = mysqli_query($conn, $query);
 
 <br>
 <a href="add_slot.php">Add New Slot</a>
-
+</div>
 </div>
 </body>
 </html>

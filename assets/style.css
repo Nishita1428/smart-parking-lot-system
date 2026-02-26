@@ -1,50 +1,72 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #3b82f6, #1e3a8a);
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    width: 450px;
-    margin: 60px auto;
-    border-radius: 12px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-h2 {
-    text-align: center;
-}
-
-button {
-    padding: 12px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-button:hover {
-    background: #1e40af;
-}
-
+/* Navbar */
 .navbar {
-    background: #1e3a8a;
-    padding: 12px;
-    text-align: center;
+    background: #1976d2;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a {
     color: white;
-    margin: 0 15px;
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .navbar a:hover {
     text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125ea5;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #1976d2;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }

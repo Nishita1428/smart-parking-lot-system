@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php include("includes/navbar.php"); ?>
 
 <div class="container">
+    <div class="card">
 <h2>Remove Vehicle</h2>
 
 <?php if($message != "") { ?>
@@ -68,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <br>
 <a href="view_slots.php">View Slots</a>
-
+</div>
 </div>
 </body>
 </html>

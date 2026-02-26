@@ -37,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <?php include("includes/navbar.php"); ?>
 <div class="container">
+    <div class="card">
 <h2>Add Parking Slot</h2>
 
 <?php if($message != "") { ?>
@@ -63,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Add Slot</button>
 
 </form>
-
+</div>
 </div>
 </body>
 </html>
