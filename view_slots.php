@@ -22,14 +22,26 @@ $result = mysqli_query($conn, $query);
         <th>Covered</th>
         <th>EV Charging</th>
         <th>Status</th>
+        <th>Action</th>
     </tr>
 
 <?php while($row = mysqli_fetch_assoc($result)) { ?>
     <tr>
         <td><?php echo $row['slotNo']; ?></td>
-        <td><?php echo $row['isCovered'] ? "Yes" : "No"; ?></td>
-        <td><?php echo $row['isEVCharging'] ? "Yes" : "No"; ?></td>
-        <td><?php echo $row['isOccupied'] ? "Occupied" : "Available"; ?></td>
+
+<td><?php echo $row['isCovered'] ? "Yes" : "No"; ?></td>
+
+<td><?php echo $row['isEVCharging'] ? "Yes" : "No"; ?></td>
+
+<td><?php echo $row['isOccupied'] ? "Occupied" : "Available"; ?></td>
+
+<td>
+<?php if($row['isOccupied']) { ?>
+    <a href="remove_vehicle.php?slot=<?php echo $row['slotNo']; ?>">Remove</a>
+<?php } else { ?>
+    -
+<?php } ?>
+</td>
     </tr>
 <?php } ?>
 

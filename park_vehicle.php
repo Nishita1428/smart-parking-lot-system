@@ -31,7 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Update slot to occupied
         $update = "UPDATE parking_slots SET isOccupied = 1 WHERE id = $slotId";
-        mysqli_query($conn, $update);
+        // mysqli_query($conn, $update);
+
+        if(mysqli_query($conn, $update)){
+    $message = "Vehicle parked in Slot No: " . $slot['slotNo'];
+} else {
+    $message = "Error while updating slot!";
+}
+
+
 
         $message = "Vehicle parked in Slot No: " . $slot['slotNo'];
 

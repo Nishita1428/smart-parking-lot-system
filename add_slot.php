@@ -5,7 +5,7 @@ $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $slotNo = $_POST["slotNo"];
+    $slotNo = intval($_POST["slotNo"]);
     $isCovered = isset($_POST["isCovered"]) ? 1 : 0;
     $isEVCharging = isset($_POST["isEVCharging"]) ? 1 : 0;
 

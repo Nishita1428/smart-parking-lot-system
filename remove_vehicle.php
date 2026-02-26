@@ -1,11 +1,21 @@
 <?php
 include("includes/db.php");
 
+if(isset($_GET['slot'])){
+    $slotNo = intval($_GET['slot']);
+
+    $update = "UPDATE parking_slots SET isOccupied = 0 WHERE slotNo = $slotNo";
+    mysqli_query($conn, $update);
+
+    header("Location: view_slots.php");
+    exit();
+}
+
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $slotNo = $_POST["slotNo"];
+    $slotNo = intval($_POST["slotNo"]);
 
     // Check if slot exists and is occupied
     $checkQuery = "SELECT * FROM parking_slots 
