@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+    <?php include("includes/navbar.php"); ?>
 <div class="container">
 <h2>Add Parking Slot</h2>
 

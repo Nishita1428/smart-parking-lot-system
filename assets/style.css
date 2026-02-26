@@ -1,33 +1,50 @@
 body {
-    font-family: Arial;
-    background-color: #f4f6f9;
-    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #3b82f6, #1e3a8a);
+    margin: 0;
 }
 
 .container {
     background: white;
-    padding: 20px;
-    width: 400px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 450px;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
+h2 {
+    text-align: center;
 }
 
 button {
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    background: #2563eb;
     color: white;
     border: none;
-    cursor: pointer;
     width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #1e40af;
+}
+
+.navbar {
+    background: #1e3a8a;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }

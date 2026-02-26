@@ -13,6 +13,7 @@ $result = mysqli_query($conn, $query);
 </head>
 
 <body>
+    <?php include("includes/navbar.php"); ?>
 <div class="container">
 <h2>All Parking Slots</h2>
 

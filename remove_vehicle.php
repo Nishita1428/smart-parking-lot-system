@@ -46,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <?php include("includes/navbar.php"); ?>
 
 <div class="container">
 <h2>Remove Vehicle</h2>
