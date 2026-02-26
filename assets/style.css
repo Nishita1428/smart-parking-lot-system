@@ -37,7 +37,7 @@ body {
     margin: 40px auto;
 }
 
-/* Card */
+
 .card {
     background: white;
     padding: 35px;
@@ -45,7 +45,7 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* Buttons */
+
 button {
     background: #1976d2;
     color: white;
@@ -59,7 +59,7 @@ button:hover {
     background: #125ea5;
 }
 
-/* Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
