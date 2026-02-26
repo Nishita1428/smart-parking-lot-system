@@ -52,8 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="card">
 <h2>Remove Vehicle</h2>
 
-<?php if($message != "") { ?>
-    <p><?php echo $message; ?></p>
+<?php if(!empty($message)) { ?>
+    <div class="alert alert-<?php echo $messageType; ?>">
+        <?php echo $message; ?>
+    </div>
 <?php } ?>
 
 <form method="POST">

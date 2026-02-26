@@ -14,14 +14,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($result) > 0) {
         $message = "Slot number already exists!";
+        $messageType = "error";
     } else {
         $query = "INSERT INTO parking_slots (slotNo, isCovered, isEVCharging, isOccupied)
                   VALUES ('$slotNo', '$isCovered', '$isEVCharging', 0)";
 
         if (mysqli_query($conn, $query)) {
             $message = "Slot Added Successfully!";
+            $messageType = "success";
         } else {
-            $message = "Error: " . mysqli_error($conn);
+            $message = "Something went wrong!";
+            $messageType = "error";
         }
     }
 }
@@ -36,12 +39,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <?php include("includes/navbar.php"); ?>
+
 <div class="container">
     <div class="card">
+
 <h2>Add Parking Slot</h2>
 
-<?php if($message != "") { ?>
-    <p><?php echo $message; ?></p>
+<?php if(!empty($message)) { ?>
+    <div class="alert alert-<?php echo $messageType; ?>">
+        <?php echo $message; ?>
+    </div>
 <?php } ?>
 
 <form method="POST">

@@ -7,21 +7,23 @@
 <body>
 
 <div class="container">
-    <h2>Smart Parking Lot System</h2>
+    <div class="card center">
 
-    <br>
+        <h1>Smart Parking Lot System</h1>
 
-    <a href="add_slot.php"><button>Add Parking Slot</button></a>
-    <br><br>
+        <p class="subtitle">
+            A smart solution to manage parking slots efficiently.
+            Track availability, allocate vehicles, and monitor occupancy in real-time.
+        </p>
 
-    <a href="view_slots.php"><button>View All Slots</button></a>
-    <br><br>
+        <div class="dashboard-buttons">
+            <a href="add_slot.php" class="btn">Add Parking Slot</a>
+            <a href="view_slots.php" class="btn">View All Slots</a>
+            <a href="park_vehicle.php" class="btn">Park Vehicle</a>
+            <a href="remove_vehicle.php" class="btn">Remove Vehicle</a>
+        </div>
 
-    <a href="park_vehicle.php"><button>Park Vehicle</button></a>
-    <br><br>
-
-    <a href="remove_vehicle.php"><button>Remove Vehicle</button></a>
-
+    </div>
 </div>
 
 </body>
